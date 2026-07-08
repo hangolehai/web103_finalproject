@@ -1,49 +1,67 @@
-# [your app name here]
+# LocalLoop
 
 CodePath WEB103 Final Project
 
-Designed and developed by: [your names here]
+Designed and developed by: Le Hai Ha Ngo, An Dang, Duc Tran
 
-🔗 Link to deployed app:
+🔗 Link to deployed app: 
 
 ## About
 
 ### Description and Purpose
 
-[text goes here]
+LocalLoop is a hyper-local neighborhood platform designed to foster community resilience, reduce consumer waste, and build stronger neighborhood connections by allowing residents to share physical tools and practical skills. Instead of buying a ladder or a power drill for a one-time home project, or hiring an expensive contractor for a minor repair, neighbors can borrow items or rent skills (like basic plumbing or cooking lessons) from people living right down the street. 
+
+The purpose of the app is to save community members money, minimize individual environmental footprints, and reintroduce mutual aid into modern neighborhood ecosystems.
 
 ### Inspiration
 
-[text goes here]
+We were inspired by the traditional concept of "borrowing a cup of sugar from a neighbor," modernized for today's digital sharing economy. Many households own expensive tools that sit in a garage or closet 99% of the year, while others lack access to those exact items when they need them most. By creating a trusted, organized local network, we want to make sustainable, community-driven resource sharing seamless, transparent, and highly accessible.
 
 ## Tech Stack
 
-Frontend:
+Frontend: React, React Router, CSS
 
-Backend:
+Backend: Node.js, Express, PostgreSQL, Render
 
 ## Features
 
-### [Name of Feature 1]
+### User Listings Management (CRUD)
 
-[short description goes here]
-
-[gif goes here]
-
-### [Name of Feature 2]
-
-[short description goes here]
+The platform supports a full RESTful API for handling item and skill listings. Users can create a new listing with specific details, view active listings, update their own listing details (such as description or availability parameters), and delete listings they no longer wish to share.
 
 [gif goes here]
 
-### [Name of Feature 3]
+### Interactive On-Page Reservations
 
-[short description goes here]
+Borrowers can select available calendar slots and submit a reservation request directly on an item's detail view without navigating away or reloading the page, providing a fluid single-page interaction.
 
 [gif goes here]
 
-### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
+### Dynamic Category & Details Routing
+
+Utilizing React Router, the app features dynamic frontend client-side routes that handle viewing specific product descriptions, user profiles, or filtering down into distinct item types without full-page server reloads.
+
+[gif goes here]
+
+### Administrative Database Reset
+
+The application includes a built-in, secure endpoint allowing administrators or graders to instantly reset the PostgreSQL database back to its default seeded state for seamless feature evaluation.
+
+[gif goes here]
+
+### Reservation Date & Availability Validation (Custom Feature 1)
+
+Before saving a new booking to the database, the Express backend cross-references incoming requests to validate that the requested start date is in the future and ensures the item isn't already double-booked for those exact dates.
+
+[gif goes here]
+
+### Smart Client-Side Filtering & Sorting (Custom Feature 2)
+
+Users can instantly filter the main application feed by categories (e.g., Gardening, Power Tools, Automotive, Home Skills) and sort available tools alphabetically or by date posted to quickly locate what they need.
+
+[gif goes here]
 
 ## Installation Instructions
 
-[instructions go here]
+[instructions go here - to be completed in a later milestone when repository setup is finished]
