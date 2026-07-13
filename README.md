@@ -2,7 +2,7 @@
 
 CodePath WEB103 Final Project
 
-Designed and developed by: Le Hai Ha Ngo, An Dang, Duc Tran
+Designed and developed by: Le Hai Ha Ngo, An Dang, Duc Tran, Kevin Jerome
 
 🔗 Link to deployed app: 
 
