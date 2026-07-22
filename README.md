@@ -26,11 +26,11 @@ Backend: Node.js, Express, PostgreSQL, Render
 
 ## Features
 
-### User Listings Management (CRUD)
+### ✅ User Listings Management (CRUD)
 
 The platform supports a full RESTful API for handling item and skill listings. Users can create a new listing with specific details, view active listings, update their own listing details (such as description or availability parameters), and delete listings they no longer wish to share.
 
-[gif goes here]
+![User Listings CRUD](mileston3.gif)
 
 ### Interactive On-Page Reservations
 
