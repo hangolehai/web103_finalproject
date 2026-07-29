@@ -30,37 +30,37 @@ Backend: Node.js, Express, PostgreSQL, Render
 
 The platform supports a full RESTful API for handling item and skill listings. Users can create a new listing with specific details, view active listings, update their own listing details (such as description or availability parameters), and delete listings they no longer wish to share.
 
-![User Listings CRUD](mileston3.gif)
+![User Listings CRUD](Milestone3.gif)
 
-### Interactive On-Page Reservations
+### ✅ Interactive On-Page Reservations
 
 Borrowers can select available calendar slots and submit a reservation request directly on an item's detail view without navigating away or reloading the page, providing a fluid single-page interaction.
 
-[gif goes here]
+![Interactive On-Page Reservations](Milestone3.gif)
 
-### Dynamic Category & Details Routing
+### ✅ Dynamic Category & Details Routing
 
 Utilizing React Router, the app features dynamic frontend client-side routes that handle viewing specific product descriptions, user profiles, or filtering down into distinct item types without full-page server reloads.
 
-[gif goes here]
+![Dynamic Category & Details Routing](Milestone3.gif)
 
-### Administrative Database Reset
+### ✅ Administrative Database Reset
 
 The application includes a built-in, secure endpoint allowing administrators or graders to instantly reset the PostgreSQL database back to its default seeded state for seamless feature evaluation.
 
-[gif goes here]
+![Administrative Database Reset](Milestone3.gif)
 
-### Reservation Date & Availability Validation (Custom Feature 1)
+### ✅ Reservation Date & Availability Validation (Custom Feature 1)
 
 Before saving a new booking to the database, the Express backend cross-references incoming requests to validate that the requested start date is in the future and ensures the item isn't already double-booked for those exact dates.
 
-[gif goes here]
+![Reservation Date & Availability Validation](Milestone3.gif)
 
-### Smart Client-Side Filtering & Sorting (Custom Feature 2)
+### ✅ Smart Client-Side Filtering & Sorting (Custom Feature 2)
 
 Users can instantly filter the main application feed by categories (e.g., Gardening, Power Tools, Automotive, Home Skills) and sort available tools alphabetically or by date posted to quickly locate what they need.
 
-[gif goes here]
+![Smart Client-Side Filtering & Sorting](Milestone3.gif)
 
 ## Installation Instructions
 
