@@ -2,11 +2,13 @@ const { Pool } = require('pg');
 require('dotenv').config();
 
 // We'll set up a default connection to a local 'localloop' database if no connection string is provided.
+const connectionString = process.env.DATABASE_URL || (process.env.PGHOST
+  ? `postgres://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${process.env.PGPORT}/${process.env.PGDATABASE}`
+  : 'postgresql://localhost:5432/localloop');
+
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || process.env.PGHOST 
-    ? `postgres://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${process.env.PGPORT}/${process.env.PGDATABASE}`
-    : 'postgresql://localhost:5432/localloop',
-  ssl: (process.env.DATABASE_URL || process.env.PGHOST) ? { rejectUnauthorized: false } : false
+  connectionString,
+  ssl: process.env.DATABASE_URL || process.env.PGHOST ? { rejectUnauthorized: false } : false
 });
 
 pool.on('connect', () => {

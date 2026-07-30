@@ -1,23 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Explore from './pages/Explore';
+import ListingDetails from './pages/ListingDetails';
 
 function App() {
   return (
     <Router>
       <nav className="navbar">
-        <Link to="/" className="navbar-brand">LocalLoop</Link>
+        <NavLink to="/" className="navbar-brand">LocalLoop</NavLink>
         <div className="navbar-links">
-          <Link to="/">Explore</Link>
-          <Link to="/">Dashboard</Link>
-          <Link to="/">Messages</Link>
-          <Link to="/">Profile</Link>
+          <NavLink to="/">Explore</NavLink>
+          <NavLink to="/dashboard">Dashboard</NavLink>
         </div>
       </nav>
       
       <Routes>
-        {/* We'll use Dashboard as the main route for now to demonstrate CRUD */}
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Explore />} />
+        <Route path="/listings/:id" element={<ListingDetails />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );

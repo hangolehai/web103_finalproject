@@ -42,7 +42,7 @@ const Dashboard = () => {
       const url = editingListing 
         ? `/api/listings/${editingListing.id}` 
         : '/api/listings';
-      const method = editingListing ? 'PUT' : 'POST';
+      const method = editingListing ? 'PATCH' : 'POST';
 
       const response = await fetch(url, {
         method,
@@ -53,6 +53,8 @@ const Dashboard = () => {
       if (response.ok) {
         fetchListings();
         handleCloseModal();
+      } else {
+        console.error('Unable to save listing');
       }
     } catch (error) {
       console.error('Error saving listing:', error);
@@ -75,7 +77,10 @@ const Dashboard = () => {
   return (
     <div className="container">
       <div className="dashboard-header">
-        <h1>My Dashboard</h1>
+        <div>
+          <p className="eyebrow">Maplewood neighborhood</p>
+          <h1>My listings</h1>
+        </div>
         <button className="btn btn-primary" onClick={() => handleOpenModal()}>
           <Plus size={18} /> List a New Tool/Skill
         </button>
