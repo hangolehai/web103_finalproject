@@ -45,7 +45,7 @@ Complete the checklist below detailing each baseline, custom, and stretch featur
     - [x] Components broken down into categories, including Page and Component types
     - [x] Corresponding container components and presenter components as appropriate
 - [x] The project includes dynamic routes for both frontend and backend apps
-- [ ] The project is deployed on Render with all pages and features that are visible to the user are working as intended
+- [x] The project is deployed on Render with all pages and features that are visible to the user are working as intended
 
 ### Custom Features
 
@@ -59,7 +59,7 @@ Complete the checklist below detailing each baseline, custom, and stretch featur
 - [x] The user can filter or sort items based on particular criteria as appropriate for your use case
 - [ ] Data is automatically generated in response to a certain event or user action. Examples include generating a default inventory for a new user starting a game or creating a starter set of tasks for a user creating a new task app account
 - [x] Data submitted via a POST or PATCH request is validated before the database is updated (e.g. validating that an event is in the future before allowing a new event to be created)
-  - [ ] *To receive full credit, please be sure to demonstrate in your walkthrough that for certain inputs, the item will NOT be successfully created or updated.*
+  - [x] *To receive full credit, please be sure to demonstrate in your walkthrough that for certain inputs, the item will NOT be successfully created or updated.*
 
 ### Stretch Features
 
